@@ -1,0 +1,197 @@
+\documentclass{beamer} 
+%\documentclass[handout]{beamer} 
+
+% Michael Maier, 2015.
+% CC-0
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+
+\title{OpenStreetMap und Wikidata} 
+\author{Michael Maier \textless Michael.Maier@mailbox.org\textgreater} 
+\date{4. Juli 2016} 
+
+\usetheme{Antibes}
+
+\newcommand{\boldm}[1] {\mathversion{bold}#1\mathversion{normal}}
+
+\hypersetup{colorlinks=true,urlcolor=blue,linkcolor=white}
+
+%\usebackgroundtemplatei{
+%\includegraphics[width=\paperwidth,
+%height=0.8\paperheight]{mag_map.png}
+%}
+
+\begin{document}
+
+%\maketitle
+
+\begin{frame} 
+
+
+\begin{figure}
+  \centering
+  \includegraphics[width=.5\textwidth]{mag_map.png}
+\end{figure}
+
+\begin{center}
+\Huge{OpenStreetMap und Wikidata\\}
+\end{center}
+
+\begin{center}
+\Large{\emph{auf dem Weg zu Linked Open Geodata}}
+\end{center}
+
+\end{frame}
+
+
+\section{Einleitung}
+
+
+\begin{frame}{Vorstellung}
+
+  \begin{itemize}
+    \item Michael Maier \textless \href{mailto:Michael.Maier@mailbox.org}{Michael.Maier@mailbox.org}\textgreater
+    \item Student an der TU Graz (Telematik)
+\vspace{0.3cm}
+    \item Linux-User (Debian/grml) seit 2004
+    \item Organisiere Grazer Linuxtage seit 2011 mit
+    \item OpenStreetMap als Hobby seit Juli 2010
+    \item Leite den Grazer OSM-Stammtisch seit Mai 2011
+\vspace{0.3cm}
+    \item Vorträge und Workshops zum Thema OSM seit 2012
+    \item Freiberuflich OSM-Aufträge und Consulting
+    \begin{itemize}
+      \item OSM-username: \emph{\href{http://www.openstreetmap.org/user/species}{species}}
+      \item Github-Account: \emph{\href{https://github.com/species}{species}}
+      \item Twitter-Account: \emph{\href{https://twitter.com/osmgraz}{@osmgraz}}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Linked Open Data}
+
+  Tim-Berners Lee schlägt ein Sterne-Schema für Open Data vor:
+ \vspace*{0.4cm}
+
+  \url{http://5stardata.info}
+ \vspace*{0.4cm}
+
+  \begin{itemize}
+    \item[] \textcolor{orange}{\boldm$\star$} make it available on the web under an open license \pause \includegraphics[width=.3cm]{check.png} ODbL \pause
+    \item[] \textcolor{orange}{\boldm$\star$$\star$} make it available as structured data (Karten nicht JPG) \pause  \includegraphics[width=.3cm]{check.png} \pause
+    \item[] \textcolor{orange}{\boldm$\star$$\star$$\star$} make it available in a non-proprietary open format \pause  \includegraphics[width=.3cm]{check.png} \pause
+    \item[] \textcolor{orange}{\boldm$\star$$\star$$\star$$\star$} use URIs to denote things \pause  \includegraphics[width=.3cm]{check-yellow.png} http://osm.org/node/1 \pause
+    \begin{itemize}
+      \item[] \hspace{0.5cm}Use RDF ... ? \pause $\Rightarrow$ \url{http://linkedgeodata.org} \includegraphics[width=.3cm]{check-yellow.png} \pause
+    \end{itemize}
+    \item[] \textcolor{orange}{\boldm$\star$$\star$$\star$$\star$$\star$} link your data to other data \dots \pause 1. Schritt: Wikidata!
+  \end{itemize}
+
+
+\end{frame}
+
+\section{Wikidata}
+
+\begin{frame}{Was ist Wikidata}
+
+Ein Projekt der Wikimedia Foundation
+
+\begin{itemize}
+  \item Wikidata ist eine freie Wissensdatenbank
+
+    Release 2013 von der Wikimedia Deutschland
+
+
+    CC0 1.0
+
+
+
+    \begin{itemize}
+      \item \emph{Eigentlich eine Geo-Datenbank}
+    \end{itemize}
+\pause
+  \item Entsteht aus der Arbeit von \textgreater 2,5\,M Hobbykartografen "`\emph{Mapper}"'
+
+ \item Das komplette "`planet file"' ist ca. 74\,GB groß (xml.bz2) (Mittwoch):
+  \begin{itemize}
+    \item 3.297.315.809 Nodes
+    \item 339.736.038 Ways
+    \item 4.126.808 Relations
+  \end{itemize}
+
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Warum OpenStreetMap?}
+
+\end{frame}
+
+
+\begin{frame}{Wer steht hinter OpenStreetMap}
+
+
+\end{frame}
+
+\section{Wie funktioniert OpenStreetMap?}
+
+\subsection{Technologie}
+
+\section{OpenStreetMap Nutzen}
+
+\subsection{Rohdaten}
+
+\begin{frame}{Hilfe}
+Fragen? 
+\begin{itemize}
+  \item Dokumentation: \href{http://wiki.openstreetmap.org}{wiki.openstreetmap.org}
+  \begin{itemize} 
+    \item Mitmachen? \href{http://learnosm.org/}{learnosm.org}
+  \end{itemize}
+  \item Immer noch etwas unklar? $\Rightarrow$ Mailingliste \href{http://lists.openstreetmap.org/listinfo/talk-at}{talk-at}
+ \vspace*{0.4cm}
+  \item Weltweite \href{http://usergroups.openstreetmap.de/}{Stammtische}
+  \begin{itemize}
+    \item 1/Monat Graz
+    \item 1/Monat Wien
+    \item 1/Monat Innsbruck
+  \end{itemize}
+ \vspace*{0.4cm}
+  \item Grazer Linuxtage, 29.-30. April
+
+\end{itemize}
+
+ \vspace*{-2.8cm}
+
+\begin{itemize}
+  \item Konferenz: \href{http://stateofthemap.org/}{State of the Map}, 23.-25. September, Brüssel
+\end{itemize}
+\end{frame}
+
+\section{Ende}
+
+\begin{frame}{Vielen Dank für die Aufmerksamkeit!}
+
+  Folien zur FOSSGIS 2016, 4.7.2016, Salzburg
+\vspace{1cm}
+
+Erstellt mittels \LaTeX Beamer, Quelltext: \href{https://github.com/species/vortrag-osm-wikidata-fossgis16}{Github/species/vortrag-osm-wikidata-fossgis16}.
+\vspace{1cm}
+
+\href{mailto:michael.maier@mailbox.org}{Michael Maier}
+
+Twitter: \href{https://twitter.com/osmgraz}{@osmgraz}
+\vspace{1cm}
+
+Folien unter: \includegraphics[width=1cm]{cc-zero.pdf}. 
+
+Alle Daten ODbL, OpenStreetMap Contributors.
+
+\end{frame}
+
+
+
+\end{document}
